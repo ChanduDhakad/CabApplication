@@ -1,11 +1,6 @@
 # CabApplication
-A Cab Booking Application having rest-api for register user, driver, cab and login (spring-security), find-ride, book-ride functionality
+The Cab application aims to provide a convenient way for users to book a cab, track their ride and make payments. The application offers a user-friendly interface and robust security features.
 
-
-# BookStoreApplication
-Masai Book Store Application is a web application for a book store that allows users to register, login, browse books, add books to their cart, and purchase books. The application also includes features like tracking popular authors, refreshing the cart, analyzing the most number of unique books that the user can buy, and deleting an author
-
-#Technologies Used
 
 # Tech Stack
 - Java
@@ -18,9 +13,21 @@ Masai Book Store Application is a web application for a book store that allows u
 - Maven
 
 
+# Features
+- Users can register themselves and log into the system
+- Users can book a cab for their desired destination and track their ride in real-time
+- Users can view their ride history and payment history
+- Users can pay for their ride using multiple payment methods
+- Cab drivers can register themselves and log into the system
+- Cab drivers can view their ride history and payment history
+- Cab drivers can accept or reject ride requests from users
+- Admin can log into the system and view details of all rides and payments
 
+# Modules
 
-
+- Login Module
+- User Module
+- Admin Module
 
 
 # Installation & Run
@@ -28,12 +35,13 @@ Masai Book Store Application is a web application for a book store that allows u
 - Update the port number, username and password as per your local database configuration.
 
 ```
-    server.port=8080
+        server.port=8080
 
-    spring.datasource.url=jdbc:mysql://localhost:3306/CabDB;
+    spring.datasource.url=jdbc:mysql://localhost:3306/MasaiCabDB;
     spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
     spring.datasource.username=root
     spring.datasource.password=root
+
 ```
 
 # API Root Endpoint
@@ -43,6 +51,3 @@ https://localhost:8080/
 ```
 http://localhost:8080/swagger-ui/
 ```
-
-Authentication
-The application uses Spring Security for authentication. Users can register and log in with their email and password.
